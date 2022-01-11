@@ -1,9 +1,9 @@
 /*
 **   WHY  Create the table and update proc for WAVerify debug logging
-**  WHAT  [syn-cda-test.sql.azuresynapse.net].[syn_cda_vax].[WAVerify].[WriteVaxLog]
+**  WHAT  [syn_cda_vax].[WAVerify].[WriteVaxLog]
 ** WHERE  $/DOH-EPI-CODERS/CEDAR-DevOps/Extracts/WAIIS/IIS/SQL/Vax_Event/cr8VaxLog.sql
 **  WHEN  20211028
-**   WHO  JWA0303@doh.wa.gov | jamesatwater@hotmail.com
+**   WHO  
 */
 SET NOCOUNT ON;
 BEGIN
