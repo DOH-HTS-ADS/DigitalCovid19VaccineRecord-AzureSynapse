@@ -11,10 +11,10 @@ CREATE PROC [WAVerify].[GetVaccineCredentialStatus]
 	 )
 /*
 **   WHY  GetVaccineCredentialStatus for WAVerify
-**  WHAT  [syn-cda-test.sql.azuresynapse.net].[syn_cda_vax].[dbo].[GetVaccineCredentialStatus]
+**  WHAT  [syn_cda_vax].[dbo].[GetVaccineCredentialStatus]
 ** WHERE  $/DOH-EPI-CODERS/CEDAR-DevOps/Extracts/WAIIS/IIS/SQL/VaccineVerification/GetVaccineCredentialStatus.sql
 **  WHEN  20210929 - created | 20211108 - intrumentation for logging
-**   WHO  Jim.Atwater@doh.wa.gov | jamesatwater@hotmail.com
+**   WHO  
 */
 AS
 BEGIN
