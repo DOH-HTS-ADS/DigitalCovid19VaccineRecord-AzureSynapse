@@ -7,10 +7,10 @@ CREATE PROC [WAVerify].[GetVaccineCredential]
 	 )
 /*
 **   WHY  GetVaccineCredential for WAVerify | Param is the UserID returned by [GetVaccineCredentialStatus]
-**  WHAT  [syn-cda-test.sql.azuresynapse.net].[syn_cda_vax].[dbo].[GetVaccineCredential]
+**  WHAT  [syn_cda_vax].[dbo].[GetVaccineCredential]
 ** WHERE  $/DOH-EPI-CODERS/CEDAR-DevOps/Extracts/WAIIS/IIS/SQL/VaccineVerification/GetVaccineCredential.sql
-**  WHEN  20210929 - Created | 20211108 - Intrrumentation for logging
-**   WHO  Jim.Atwater@doh.wa.gov | jamesatwater@hotmail.com
+**  WHEN  20210929 - Created | 20211108 - Instrumentation for logging
+**   WHO  
 */
 AS
 BEGIN
@@ -35,7 +35,7 @@ BEGIN
 		DECLARE @logEnd DATETIME;
 		DECLARE @logRslt INTEGER = -1;
 		DECLARE @procName SYSNAME = N'GetVaccineCredential';
-        DECLARE @paramString NVARCHAR(255) = CAST(@UserID AS VARCHAR(10));
+                DECLARE @paramString NVARCHAR(255) = CAST(@UserID AS VARCHAR(10));
 		
 		--   --   --   --   --   --   --
 		SET @msg = N'Validate Parameters'; RAISERROR(@msg,10,1) WITH NOWAIT;
@@ -61,9 +61,9 @@ BEGIN
 
 		--   --   --   --   --   --   --
 
-			 , vm  -- Vaccination Master (specific to UserID for COVID)
+		, vm  -- Vaccination Master (specific to UserID for COVID)
 		  AS ( 
-        SELECT vm.[ASIIS_PAT_ID_PTR]
+                SELECT vm.[ASIIS_PAT_ID_PTR]
 			 , vm.[VACC_DATE]
 			 , vm.[ASIIS_FAC_ID]
 			 , [VaxCode] = vt.[CDC_VACC_CODE]
