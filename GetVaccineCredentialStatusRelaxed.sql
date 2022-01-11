@@ -14,7 +14,7 @@ CREATE PROC [WAVerify].[GetVaccineCredentialStatusRelaxed]
 **  WHAT  GetVaccineCredentialStatusRelaxed.sql
 ** WHERE  $\CEDAR-DevOps\Reports\WAVerify
 **  WHEN  20211010 - created | 20211021 - update per CA Matching Logic | 20211108 - intrumentation for logging  | 20211119 - Added multi-row failure message
-**   WHO  Muthu.Ganesh@doh.wa.gov | jim.atwater@doh.wa.gov
+**   WHO  
 */
 AS
 BEGIN
